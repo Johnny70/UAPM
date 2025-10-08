@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "projektnamn": "ExempelApp",
+    "författare": "Johnny",
+    "version": "0.1.0",
+    "senastUppdaterad": "2025-10-08"
+  },
+  "komponenter": [
+    { "filnamn": "main.py", "ansvar": "Huvudlogik och startpunkt" },
+    { "filnamn": "ui.py", "ansvar": "UI-komponenter och layout" },
+    { "filnamn": "data_model.json", "ansvar": "Datamodell och valideringsregler" }
+  ],
+  "design": {
+    "typsnitt": "Inter, 16px",
+    "färger": { "primär": "#0055FF", "sekundär": "#FF5500", "bakgrund": "#FFFFFF" },
+    "avstånd": { "margin": "16px", "padding": "12px" },
+    "skuggor": "0px 4px 6px rgba(0,0,0,0.1)"
+  },
+  "arbetsflöde": {
+    "buggrutiner": "Rapportera och fixa buggar enligt severity",
+    "aiInstruktioner": "Följ alltid design- och kodstandard",
+    "ombyggnadslogik": "Bygg om komponenter vid ändring i datamodell"
+  },
+  "datamodell": {
+    "poster": [
+      {
+        "namn": "Användare",
+        "fält": { "id": "integer", "namn": "string", "email": "string" },
+        "validering": { "email": "måste innehålla '@'" }
+      }
+    ]
+  },
+  "testning": {
+    "täckning": "80%",
+    "testfall": ["test_login", "test_ui_rendering", "test_data_validation"],
+    "manuellaKontroller": ["Verifiera färgkontrast", "Kontrollera tangentbordsnavigering"]
+  },
+  "beroenden": {
+    "bibliotek": ["requests", "flask", "pydantic"],
+    "kör": "python main.py",
+    "deploy": "Docker build & run"
+  },
+  "tillgänglighet": {
+    "kontraststandard": "WCAG AA",
+    "tangentbordsnavigering": true,
+    "användarreferenser": ["sv-SE", "en-US"]
+  },
+  "implementering": [
+    "Definiera datamodell",
+    "Bygg komponenter",
+    "Implementera UI",
+    "Skriv tester",
+    "Utför QA",
+    "Deploy"
+  ],
+  "miljö": {
+    "miljö": "development",
+    "API_URL": "http://localhost:5000"
+  },
+  "resurser": ["logo.svg", "icon.png", "README.md"],
+  "integration": [
+    { "typ": "API", "namn": "PaymentGateway", "url": "https://api.payment.com" }
+  ],
+  "historik": [
+    { "version": "0.1.0", "beskrivning": "Första exempelfil" }
+  ],
+  "anteckningar": [
+    "Detta är en komplett exempelfil för demonstration",
+    "Fyll i tomma sektioner efter behov"
+  ]
+}
